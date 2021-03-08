@@ -31,4 +31,4 @@ The input should be:
 ## To be worked later
 
 1. Folder download
-2. Dynamically read the files collection. Currently with each file addition it has to be added in code.
+2. Multiple Folder inputting, currently only from one folder I can get all templates
