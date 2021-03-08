@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "What if you dont need to install yourself all those small tools manually each time you bootstrap a project?",
   "dependencies": {
+    "axios": "^0.21.1",
     "inquirer": "^8.0.0"
   },
   "bin": {

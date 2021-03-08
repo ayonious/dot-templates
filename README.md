@@ -2,7 +2,7 @@
 
 > Create your own collection of dotfiles and each time you need them just run js-boot
 
-## Setup
+## ⌨️ Setup
 
 1. Download this repo
 2. Replace the remote url location of directory in github that contains all your files.
