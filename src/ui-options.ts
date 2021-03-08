@@ -1,11 +1,8 @@
 #!/usr/bin/env node
-
 import * as inquirer from "inquirer";
-import * as fs from "fs";
-import * as https from "https";
-import fetchFiles from "./fetchGitFiles";
-import { promisify } from "util";
+
 import downloadGitFile from "./downloadGitFile";
+import fetchFiles from "./fetchGitFiles";
 
 const runProg = async (filesLocation: string) => {
   const files = await fetchFiles("ayonious", "js-bootstrapper", filesLocation);

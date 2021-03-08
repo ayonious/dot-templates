@@ -1,6 +1,6 @@
-# js-bootstrapper
+# dot-templates
 
-> Create your own collection of dotfiles and each time you need them just run js-boot
+> Create your own collection of dotfiles and each time you need them just run dots
 
 ## ⌨️ Setup
 
