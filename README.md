@@ -32,3 +32,4 @@ The input should be:
 
 1. Folder download
 2. Multiple Folder inputting, currently only from one folder I can get all templates
+3. ability to configure this CLI after the first installation.
