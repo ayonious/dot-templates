@@ -1,5 +1,5 @@
 {
-  "name": "js-bootstrapper",
+  "name": "dot-templates",
   "version": "1.0.0",
   "description": "What if you dont need to install yourself all those small tools manually each time you bootstrap a project?",
   "dependencies": {
@@ -7,7 +7,7 @@
     "inquirer": "^8.0.0"
   },
   "bin": {
-    "js-boot": "dist/ui-options.js"
+    "dots": "dist/ui-options.js"
   },
   "devDependencies": {
     "@types/inquirer": "^7.3.1",
