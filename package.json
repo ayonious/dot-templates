@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "What if you dont need to install yourself all those small tools manually each time you bootstrap a project?",
   "dependencies": {
-    "commander": "^7.1.0",
-    "inquirer": "^8.0.0",
-    "mustache": "^4.1.0"
+    "inquirer": "^8.0.0"
   },
   "bin": {
     "js-boot": "dist/ui-options.js"

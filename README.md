@@ -1,38 +1,34 @@
 # js-bootstrapper
 
-What if you dont need to install yourself all those small tools manuall each time you bootstrap a project?
+> Create your own collection of dotfiles and each time you need them just run js-boot
 
-# What features do I usually have almost all js projects
+# Setup
 
-1. Typescript
+1. Download this repo
+2. Replace the remote url location of directory in github that contains all your files.
 
-- commons
-- backend service
-- library
+```bash
+npm install
+npx tsc
+npm link
+```
 
-2. Tests with Jest with test coverate
+This will setup this took in your computer. Now goto any folder and run
 
-- const config file
-- a scripts.test
+```
+js-boot
+```
 
-3. Lint
-4. A readme showing with some good imojis as headlines and badges
+# The Idea
 
-- const file
+js-boot should be able to fetch files remotely from github and put it in current repository.
 
-5. travis: pr checker at least
+The input should be:
 
-- const file
+1. Remote URL of files
+2. Which files are needed
 
-6. semantic release
-7. husky and prettier
+# To be worked later:
 
-- const file
-
-8. renovate to auto package update
-
-- const file
-
-9. gitignore
-
-- const file
+1. Folder download
+2. Dynamically read the files collection. Currently with each file addition it has to be added in code.
