@@ -16,12 +16,12 @@ npm link
 This will setup this took in your computer. Now goto any folder and run
 
 ```
-js-boot
+dots
 ```
 
 ## The Idea
 
-js-boot should be able to fetch files remotely from github and put it in current repository.
+dots should be able to fetch files remotely from github and put it in current repository.
 
 The input should be:
 
