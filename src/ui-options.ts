@@ -4,8 +4,11 @@ import * as inquirer from "inquirer";
 import downloadGitFile from "./downloadGitFile";
 import fetchFiles from "./fetchGitFiles";
 
+const user = "ayonious";
+const repo = "js-bootstrapper";
+
 const runProg = async (filesLocation: string) => {
-  const files = await fetchFiles("ayonious", "js-bootstrapper", filesLocation);
+  const files = await fetchFiles(user, repo, filesLocation);
 
   const options = files.map((file) => file.name);
 

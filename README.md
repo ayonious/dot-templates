@@ -5,7 +5,15 @@
 ## ⌨️ Setup
 
 1. Download this repo
-2. Replace the remote url location of directory in github that contains all your files.
+
+2. change the following lines from src/ui-options.ts
+
+```text
+const user = "ayonious";
+const repo = "js-bootstrapper";
+```
+
+3. Now install your package like this
 
 ```bash
 npm install
