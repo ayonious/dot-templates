@@ -38,6 +38,5 @@ The input should be:
 
 ## 📅 To be worked later
 
-1. Folder download
+1. ability to configure this CLI after the first installation.
 2. Multiple Folder inputting, currently only from one folder I can get all templates
-3. ability to configure this CLI after the first installation.

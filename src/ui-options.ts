@@ -6,17 +6,17 @@ import fetchFiles from "./fetchGitFiles";
 
 const user = "ayonious";
 const repo = "js-bootstrapper";
+const templatesLocation = "templates";
 
 const runProg = async (filesLocation: string) => {
   const files = await fetchFiles(user, repo, filesLocation);
 
   const options = files.map((file) => file.name);
-
   const questions = [
     {
       type: "checkbox",
       choices: options,
-      message: "Which files do you want to be added?",
+      message: "Which files/folders do you want to be added?",
       name: "fileNames",
     },
   ];
@@ -28,4 +28,4 @@ const runProg = async (filesLocation: string) => {
   });
 };
 
-runProg("templates/common");
+runProg(templatesLocation);
