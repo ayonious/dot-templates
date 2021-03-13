@@ -45,9 +45,8 @@ typings/
 # Optional npm cache directory
 .npm
 
-# eslint
+# Optional eslint cache
 .eslintcache
-.eslintrc.json
 
 # Optional REPL history
 .node_repl_history
@@ -68,19 +67,4 @@ typings/
 test
 coverage
 
-# jest configuration
-jestconfig.json
-
-# ts configuration
-tsconfig.json
-
-# other plugins
-renovate.json
-.travis.yml
-static-resources
-src
-index.ts
-.huskyrc.json
-.prettierrc
-.prettierignore
 node_modules
