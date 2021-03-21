@@ -10,7 +10,8 @@
 
 ```text
 const user = "ayonious";
-const repo = "js-bootstrapper";
+const repo = "dot-templates";
+const templatesLocation = "templates";
 ```
 
 3. Now install your package like this
