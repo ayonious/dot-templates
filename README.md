@@ -39,5 +39,6 @@ The input should be:
 
 ## 📅 To be worked later
 
-1. ability to configure this CLI after the first installation.
-2. Multiple Folder inputting, currently only from one folder I can get all templates
+1. Api rate limit. Add cache or maybe Oauth
+2. ability to configure this CLI after the first installation.
+3. Multiple Folder inputting, currently only from one folder I can get all templates

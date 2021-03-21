@@ -25,8 +25,6 @@ const findTreeDetailsOfSha = async (
   return ret.data;
 };
 
-// findTreeDetailsOfSha("12dbac41aac8826af81320ef0698f8b515f9a952");
-
 const fetchGitFiles = async (
   user: string,
   repo: string,
@@ -36,7 +34,9 @@ const fetchGitFiles = async (
   const folders = filesLocation.split("/");
 
   let curSha = masterSha;
+
   for (let folder of folders) {
+    console.log("folder", folder);
     const currentFolderDetails = await findTreeDetailsOfSha(user, repo, curSha);
     curSha = currentFolderDetails.tree.filter(
       (treeEntry) => treeEntry.path === folder
@@ -44,7 +44,7 @@ const fetchGitFiles = async (
   }
 
   const currentFolderDetails = await findTreeDetailsOfSha(user, repo, curSha);
-  console.log("currentFolderDetails.tree", currentFolderDetails.tree);
+
   return currentFolderDetails.tree;
 };
 
