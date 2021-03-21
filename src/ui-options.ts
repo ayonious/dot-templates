@@ -5,13 +5,13 @@ import downloadGitFile from "./downloadGitFile";
 import fetchFiles from "./fetchGitFiles";
 
 const user = "ayonious";
-const repo = "js-bootstrapper";
+const repo = "dot-templates";
 const templatesLocation = "templates";
 
 const runProg = async (filesLocation: string) => {
   const files = await fetchFiles(user, repo, filesLocation);
 
-  const options = files.map((file) => file.name);
+  const options = files.map((file) => file.path);
   const questions = [
     {
       type: "checkbox",
