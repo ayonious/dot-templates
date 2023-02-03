@@ -23,9 +23,9 @@ const runProg = async (filesLocation: string) => {
 
   inquirer.prompt(questions).then((answers) => {
     answers.fileNames.map((fileName: string) => {
-      downloadGitFile(filesLocation, fileName);
+      downloadGitFile(filesLocation, filesLocation, fileName);
     });
   });
 };
 
-runProg(templatesLocation);
+// runProg(templatesLocation);

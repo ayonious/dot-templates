@@ -3,15 +3,25 @@ import * as https from "https";
 
 import { user, repo } from "./ui-options";
 
-const downloadFile = (filesLocation: string, fileName: string) => {
-  const file = fs.createWriteStream(`./${fileName}`);
+const downloadFile = (
+  remoteFilesLocation: string,
+  localFilesLocation: string,
+  fileName: string
+) => {
+  console.log("localFilesLocation", localFilesLocation);
+  console.log("remoteFilesLocation", remoteFilesLocation);
+  const file = fs.createWriteStream(`./${localFilesLocation}_${fileName}`);
 
-  https.get(
-    `https://raw.githubusercontent.com/${user}/${repo}/master/${filesLocation}/${fileName}`,
-    (response) => {
+  const remoetFile = `https://raw.githubusercontent.com/${user}/${repo}/master/${remoteFilesLocation}/${fileName}`;
+  console.log("remoetFile", remoetFile);
+
+  https
+    .get(remoetFile, (response) => {
       response.pipe(file);
-    }
-  );
+    })
+    .on("error", (e) => {
+      console.error(e);
+    });
 };
 
 export default downloadFile;
