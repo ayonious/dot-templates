@@ -4,9 +4,9 @@ import * as inquirer from "inquirer";
 import downloadGitFile from "./downloadGitFile";
 import fetchFiles from "./fetchGitFiles";
 
-const user = "ayonious";
-const repo = "dot-templates";
-const templatesLocation = "templates";
+export const user = "ayonious";
+export const repo = "dot-templates";
+export const templatesLocation = "templates";
 
 const runProg = async (filesLocation: string) => {
   const files = await fetchFiles(user, repo, filesLocation);

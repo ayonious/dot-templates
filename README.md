@@ -28,7 +28,7 @@ This will setup this took in your computer. Now goto any folder and run
 dots
 ```
 
-## 💡 The Idea
+## � The Idea
 
 dots should be able to fetch files remotely from github and put it in current repository.
 
