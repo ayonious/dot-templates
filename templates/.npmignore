@@ -72,7 +72,6 @@ jestconfig.json
 tsconfig.json
 
 # other plugins
-renovate.json
 .travis.yml
 static-resources
 src
