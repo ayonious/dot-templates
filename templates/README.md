@@ -35,19 +35,19 @@ Printing Simple Table with Coloring rows on your console. Its useful when you wa
 ## 🔆 Installation
 
 ```bash
-npm install {{ name }} --save
+yarn add {{ name }}
 ```
 
 ## 🏃🏿 Run
 
 ```bash
-npm run start
+yarn start
 ```
 
 ## 🧪 Test
 
 ```bash
-npm run test
+yarn test
 ```
 
 ## 🐇 Basic Example

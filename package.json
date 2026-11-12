@@ -22,7 +22,7 @@
     "dist"
   ],
   "scripts": {
-    "setup": "npm install",
+    "setup": "yarn install",
     "build": "tsc",
     "start": "ts-node src/ui-options.ts",
     "format": "prettier --write \"**/*.{json,md,ts,tsx,yml,js,jsx}\"",
